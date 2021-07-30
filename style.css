@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Marck+Script&family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url("oldpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Homemade Apple", serif;
+  /* font-family: "Marck Script", sans-serif; */
+  /* font-family: "Montez", sans-serif; */
+  text-align: center;
+  /* justify-content: center; */
+}
+
+#page-container {
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+  color: rgb(41, 30, 109);
+  /* color: rgb(10, 10, 34); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: none;
+  box-shadow: 10px rgba(14, 68, 52, 0.5);
+}
+
+.quote-text {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  display: none;
+  font-size: 2.5rem;
+  color: rgb(104, 139, 141);
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: rgb(76, 104, 105);
+}
+
+.button-container {
+  margin-top: 15px;
+  width: 100%;
+}
+
+button {
+  margin: 10px;
+  font-family: "Marck Script", sans-serif;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: rgb(58, 61, 57);
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  box-shadow: 5px 5px 5px rgba(73, 70, 70, 0.75);
+}
+
+button:hover {
+  filter: brightness(125%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.725);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+/* Loader */
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #333; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(58, 61, 57);
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 400px) {
+  .quote-text {
+    font-size: 1.5rem;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+}

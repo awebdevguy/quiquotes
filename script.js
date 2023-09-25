@@ -18,7 +18,8 @@ async function getQuote() {
   // changeBgColor();
   showLoadingSpinner();
 
-  const proxyURL = "https://quicors.herokuapp.com/";
+  const proxyURL = 'https://corsproxy.io/?'
+  ;
   const apiURL = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
   // const apiURL = "https://type.fit/api/quotes";
 
